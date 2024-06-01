@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(235, 230, 230, 0.907);
+    padding: 20px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #151186fc;
+    text-decoration: none;
+}
+        .hero {
+    height: 50vh;
+    background-image: url('image.png');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 10px;
+    margin-right: 15px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+       
+        
+        .hero-content h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+        }
+
+        .destination {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .places-container, .food-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .place, .food {
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .place img, .food img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .place h2, .food h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .contact-form {
+            padding: 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .contact-form form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label h3 {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .place, .food {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .place, .food {
+                width: 100%;
+            }
+
+            .hero-content h1 {
+                font-size: 2em;
+            }
+
+            .hero-content p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo"><h1>My City:</h1></h1>
+                <ul class="nav-links">
+                    <li><a href="about.html"><h3>Places</h3></a></li>
+                    <li><a href="food.html"><h3>Food</h3></a></li>
+                    <li><a href="contact.html"><h3>Contact</h3></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Silk City Berhampur</h1>
+            <p>Get in touch with us for any inquiries or support</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="destination">
+            <div class="section">
+                <h3>Places to Visit</h3>
+                <div class="places-container">
+                    <div class="place">
+                        <img src="Budhakhol-Temple-Waterfall-Ganjam1.jpg" alt="Place 1">
+                        <h2>Budhakhola</h2>
+                        <p>It is the symbol of Buddhist culture with the presence of five temples.</p>
+                    </div>
+                    <div class="place">
+                        <img src="TaraTarini-Sakti-temple-Ganjam7.jpg" alt="Place 2">
+                        <h2>Tara Tarini</h2>
+                        <p>It is a Hindu temple of Adishakti at the Kumari hills on the bank of Rushikulya river.</p>
+                    </div>
+                    <div class="place">
+                        <img src="chilika.webp" alt="Place 3">
+                        <h2>Chilika</h2>
+                        <p>It is the largest brackish water lagoon in Asia and second largest in the world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Famous Food</h3>
+                <div class="food-container">
+                    <div class="food">
+                        <img src="achar.jpeg" alt="Food 1">
+                        <h2>Achar</h2>
+                        <p>Pickles with distinct taste and ingredients are being prepared.</p>
+                    </div>
+                    <div class="food">
+                        <img src="pampad.jpeg" alt="Food 2">
+                        <h2>Pampad</h2>
+                        <p>Pampad with various varieties and tastes is available in Berhampur.</p>
+                    </div>
+                    <div class="food">
+                        <img src="puri upama.jpeg" alt="Food 3">
+                        <h2>Puri Upama</h2>
+                        <p>Berhampur is famous for Puri Upama and various other breakfasts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Us!</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name"><h3>Name:</h3></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><h3>Email:</h3></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"><h3>Message:</h3></label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
